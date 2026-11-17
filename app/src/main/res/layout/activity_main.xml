@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtSinhVien"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Le Dinh Danh-2415053122308"
+        android:textSize="10pt"
+        />
+    <EditText
+        android:id="@+id/Ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap ten"
+        android:inputType="textCapSentences"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/SoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap So Luong"
+        android:inputType="number"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/btnKiemTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kiem tra">
+    </Button>
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xoa">
+    </Button>
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ket qua"
+        android:layout_marginTop="10dp"
+        android:textSize="8pt"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/txtMaLuot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ma luot"
+        android:layout_marginTop="8pt">
+    </TextView>
+</LinearLayout>
